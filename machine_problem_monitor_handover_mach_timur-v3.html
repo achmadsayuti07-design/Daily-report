@@ -403,7 +403,7 @@
           </span>
           <div>
             <h2 class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white">
-              Activity Tambahan (PM / Repair Sparepart / Improvement)
+              Activity Tambahan (PM / Repair Sparepart / Improvement / Lainnya)
             </h2>
             <p class="text-xs text-slate-500 dark:text-slate-400">
               Catatan pekerjaan rutin per tanggal & ter-reset otomatis saat pergantian shift
@@ -419,7 +419,7 @@
       <div id="activities-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"></div>
 
       <div id="activities-empty" class="text-center py-6 px-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-dashed border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400">
-        Belum ada activity tambahan (PM / Repair Sparepart) pada tanggal ini.
+        Belum ada activity tambahan (PM / Repair Sparepart / Lainnya) pada tanggal ini.
       </div>
     </section>
 
@@ -428,7 +428,7 @@
   <!-- Footer -->
   <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-4 mt-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
-      <p>Machine Problem Monitor & Handover Mach Timur • © Achamd Sayuti_56899</p>
+      <p>Machine Problem Monitor & Handover Mach Timur • © 56899</p>
       <p id="last-sync-info">Terakhir diperbarui: Baru saja</p>
     </div>
   </footer>
@@ -2452,7 +2452,7 @@ function getOrCreateSheet() {
         }
 
         lines.push(``);
-        lines.push(`_© Achamd Sayuti_56899_`);
+        lines.push(`_©56899_`);
 
         return lines.join('\n');
       }
@@ -2547,7 +2547,7 @@ function getOrCreateSheet() {
         }
 
         text += `_Dikirim via Machine Problem Monitor & Handover Mach Timur_\n`;
-        text += `_© Achamd Sayuti_56899_`;
+        text += `_©56899_`;
 
         const reportArea = document.getElementById('share-report-text');
         if (reportArea) reportArea.value = text;
